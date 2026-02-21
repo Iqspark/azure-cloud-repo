@@ -6,6 +6,7 @@ name: Build and deploy Python app to Azure Web App - iqspark-dev-web-app1
 
 on:
   push:
+    paths: ['employee-repo/employeee-backend']
     branches:
       - main
   workflow_dispatch:
@@ -73,4 +74,5 @@ jobs:
         with:
           app-name: 'iqspark-dev-web-app1'
           slot-name: 'Production'
+
           
